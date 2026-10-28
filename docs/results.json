@@ -1,0 +1,296 @@
+{
+  "size": 128,
+  "ratio": 0.1,
+  "iterations": 30,
+  "bench": {
+    "size": 128,
+    "mask": "scratch",
+    "ratio": 0.1,
+    "coverage": 0.1,
+    "iterations": 30,
+    "damaged": {
+      "psnr": 16.85,
+      "hole_rmse": 115.899
+    },
+    "methods": [
+      {
+        "method": "nearest",
+        "psnr": 32.647,
+        "hole_rmse": 18.803,
+        "gain": 15.797
+      },
+      {
+        "method": "diffusion",
+        "psnr": 34.78,
+        "hole_rmse": 14.709,
+        "gain": 17.93
+      },
+      {
+        "method": "median",
+        "psnr": 31.184,
+        "hole_rmse": 22.254,
+        "gain": 14.333
+      }
+    ]
+  },
+  "bench_by_mask": {
+    "scratch": {
+      "size": 128,
+      "mask": "scratch",
+      "ratio": 0.1,
+      "coverage": 0.1,
+      "iterations": 30,
+      "damaged": {
+        "psnr": 16.85,
+        "hole_rmse": 115.899
+      },
+      "methods": [
+        {
+          "method": "nearest",
+          "psnr": 32.647,
+          "hole_rmse": 18.803,
+          "gain": 15.797
+        },
+        {
+          "method": "diffusion",
+          "psnr": 34.78,
+          "hole_rmse": 14.709,
+          "gain": 17.93
+        },
+        {
+          "method": "median",
+          "psnr": 31.184,
+          "hole_rmse": 22.254,
+          "gain": 14.333
+        }
+      ]
+    },
+    "block": {
+      "size": 128,
+      "mask": "block",
+      "ratio": 0.1,
+      "coverage": 0.1,
+      "iterations": 30,
+      "damaged": {
+        "psnr": 14.845,
+        "hole_rmse": 146.0
+      },
+      "methods": [
+        {
+          "method": "nearest",
+          "psnr": 26.808,
+          "hole_rmse": 36.828,
+          "gain": 11.964
+        },
+        {
+          "method": "diffusion",
+          "psnr": 29.198,
+          "hole_rmse": 27.969,
+          "gain": 14.354
+        },
+        {
+          "method": "median",
+          "psnr": 25.38,
+          "hole_rmse": 43.408,
+          "gain": 10.536
+        }
+      ]
+    },
+    "scatter": {
+      "size": 128,
+      "mask": "scatter",
+      "ratio": 0.1,
+      "coverage": 0.1,
+      "iterations": 30,
+      "damaged": {
+        "psnr": 16.33,
+        "hole_rmse": 123.048
+      },
+      "methods": [
+        {
+          "method": "nearest",
+          "psnr": 38.736,
+          "hole_rmse": 9.328,
+          "gain": 22.406
+        },
+        {
+          "method": "diffusion",
+          "psnr": 40.651,
+          "hole_rmse": 7.483,
+          "gain": 24.32
+        },
+        {
+          "method": "median",
+          "psnr": 39.192,
+          "hole_rmse": 8.851,
+          "gain": 22.862
+        }
+      ]
+    }
+  },
+  "sweep": [
+    {
+      "ratio": 0.02,
+      "coverage": 0.02,
+      "damaged": 23.513,
+      "nearest": 44.313,
+      "diffusion": 46.35,
+      "median": 43.898
+    },
+    {
+      "ratio": 0.05,
+      "coverage": 0.05,
+      "damaged": 19.807,
+      "nearest": 36.458,
+      "diffusion": 38.351,
+      "median": 36.331
+    },
+    {
+      "ratio": 0.1,
+      "coverage": 0.1,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.78,
+      "median": 31.184
+    },
+    {
+      "ratio": 0.15,
+      "coverage": 0.15,
+      "damaged": 15.072,
+      "nearest": 29.782,
+      "diffusion": 31.598,
+      "median": 27.56
+    },
+    {
+      "ratio": 0.2,
+      "coverage": 0.2,
+      "damaged": 13.744,
+      "nearest": 28.646,
+      "diffusion": 29.97,
+      "median": 25.36
+    },
+    {
+      "ratio": 0.25,
+      "coverage": 0.25,
+      "damaged": 12.756,
+      "nearest": 27.401,
+      "diffusion": 28.538,
+      "median": 23.764
+    },
+    {
+      "ratio": 0.3,
+      "coverage": 0.3,
+      "damaged": 11.922,
+      "nearest": 25.756,
+      "diffusion": 27.514,
+      "median": 22.659
+    }
+  ],
+  "curve": [
+    {
+      "iterations": 1,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 33.695,
+      "median": 31.184
+    },
+    {
+      "iterations": 2,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.224,
+      "median": 31.184
+    },
+    {
+      "iterations": 3,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.469,
+      "median": 31.184
+    },
+    {
+      "iterations": 4,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.678,
+      "median": 31.184
+    },
+    {
+      "iterations": 6,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.872,
+      "median": 31.184
+    },
+    {
+      "iterations": 8,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.947,
+      "median": 31.184
+    },
+    {
+      "iterations": 12,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.975,
+      "median": 31.184
+    },
+    {
+      "iterations": 16,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.921,
+      "median": 31.184
+    },
+    {
+      "iterations": 24,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.826,
+      "median": 31.184
+    },
+    {
+      "iterations": 32,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.77,
+      "median": 31.184
+    },
+    {
+      "iterations": 48,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.746,
+      "median": 31.184
+    },
+    {
+      "iterations": 64,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.746,
+      "median": 31.184
+    },
+    {
+      "iterations": 80,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.746,
+      "median": 31.184
+    },
+    {
+      "iterations": 100,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.746,
+      "median": 31.184
+    },
+    {
+      "iterations": 120,
+      "damaged": 16.85,
+      "nearest": 32.647,
+      "diffusion": 34.746,
+      "median": 31.184
+    }
+  ]
+}
